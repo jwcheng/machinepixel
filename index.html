@@ -374,6 +374,61 @@
             line-height: 1.8;
         }
         
+        /* Technologies Section */
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 60px;
+        }
+        
+        .tech-card {
+            background: rgba(26, 10, 26, 0.6);
+            border: 2px solid rgba(59, 130, 246, 0.2);
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.4s;
+            backdrop-filter: blur(20px);
+        }
+        
+        .tech-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(139, 92, 246, 0.6);
+            box-shadow: 0 15px 35px rgba(59, 130, 246, 0.3);
+        }
+        
+        .tech-logo {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 20px;
+            transition: transform 0.3s;
+        }
+        
+        .tech-logo svg {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+        }
+        
+        .tech-card:hover .tech-logo {
+            transform: scale(1.1);
+        }
+        
+        .tech-name {
+            font-family: 'Orbitron', monospace;
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: #f1f5f9;
+        }
+        
+        .tech-description {
+            font-size: 14px;
+            color: #94a3b8;
+            margin: 0;
+        }
+        
         /* Success Stories */
         .success-card {
             background: rgba(26, 10, 26, 0.8);
@@ -824,28 +879,125 @@
         </div>
     </section>
 
+    <!-- Technologies Section -->
+    <section id="technologies" class="section">
+        <div class="container">
+            <h2 class="section-title">Technologies We Use</h2>
+            <p class="section-subtitle">We leverage the most powerful AI and automation platforms to deliver exceptional results for our clients.</p>
+            
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#EA4B71"/>
+                            <path d="M50 50h30v30H50V50zm35 0h30v30H85V50zm35 0h30v30h-30V50zM50 85h30v30H50V85zm70 0h30v30h-30V85zM50 120h30v30H50v-30zm35 0h30v30H85v-30zm35 0h30v30h-30v-30z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">N8N</h3>
+                    <p class="tech-description">Workflow automation platform</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#18BFFF"/>
+                            <path d="M60 60h80v20H60V60zm0 30h80v20H60V90zm0 30h80v20H60v-20z" fill="white"/>
+                            <circle cx="40" cy="70" r="6" fill="white"/>
+                            <circle cx="40" cy="100" r="6" fill="white"/>
+                            <circle cx="40" cy="130" r="6" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Airtable</h3>
+                    <p class="tech-description">Database & CRM platform</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#10A37F"/>
+                            <path d="M100 40c-33.137 0-60 26.863-60 60s26.863 60 60 60 60-26.863 60-60-26.863-60-60-60zm0 90c-16.569 0-30-13.431-30-30s13.431-30 30-30 30 13.431 30 30-13.431 30-30 30z" fill="white"/>
+                            <circle cx="100" cy="100" r="15" fill="#10A37F"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">OpenAI</h3>
+                    <p class="tech-description">GPT-4 & AI models</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#7C3AED"/>
+                            <path d="M100 40L70 80h20v50l30-30V80h20L100 40z" fill="white"/>
+                            <circle cx="100" cy="140" r="8" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Pinecone</h3>
+                    <p class="tech-description">Vector database for AI</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#FF6B35"/>
+                            <path d="M100 50c-27.614 0-50 22.386-50 50s22.386 50 50 50 50-22.386 50-50-22.386-50-50-50zm0 80c-16.569 0-30-13.431-30-30s13.431-30 30-30 30 13.431 30 30-13.431 30-30 30z" fill="white"/>
+                            <path d="M85 90h30v20H85V90z" fill="#FF6B35"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Apify</h3>
+                    <p class="tech-description">Web scraping & automation</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#00C851"/>
+                            <path d="M60 70h80v15H60V70zm0 25h80v15H60V95zm0 25h80v15H60v-15z" fill="white"/>
+                            <path d="M150 70l10 10-10 10v-20z" fill="white"/>
+                            <path d="M150 95l10 10-10 10v-20z" fill="white"/>
+                            <path d="M150 120l10 10-10 10v-20z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">Instantly</h3>
+                    <p class="tech-description">Email automation & outreach</p>
+                </div>
+                
+                <div class="tech-card">
+                    <div class="tech-logo">
+                        <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="200" height="200" fill="#FF5A00"/>
+                            <path d="M100 60L80 100h40L100 60z" fill="white"/>
+                            <path d="M70 120h60v20H70v-20z" fill="white"/>
+                        </svg>
+                    </div>
+                    <h3 class="tech-name">HubSpot</h3>
+                    <p class="tech-description">CRM & marketing hub</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Case Studies Section -->
     <section id="case-studies" class="section">
         <div class="container">
             <h2 class="section-title">Success Stories</h2>
-            <p class="section-subtitle">Discover how we've transformed businesses across industries with our cutting-edge AI automation solutions.</p>
+            <p class="section-subtitle">Real AI automation implementations that delivered measurable results for our clients.</p>
             <div class="grid grid-3">
                 <div class="success-card">
                     <div class="success-image success-1"></div>
-                    <h3 class="success-title">Sales Conversion Increased</h3>
-                    <p class="success-text">We equipped a leading e-commerce company with automated sales processes, resulting in a 30% increase in conversion rates and substantial revenue growth through intelligent lead scoring and personalized customer journeys.</p>
+                    <h3 class="success-title">AI Lead Scoring + N8N Pipeline</h3>
+                    <p class="success-text">Implemented OpenAI GPT-4 lead scoring with N8N workflow automation for SaaS company. System analyzes prospect behavior, scores leads 1-100, and triggers personalized email sequences. Result: 30% increase in qualified leads, 47% boost in sales team efficiency.</p>
                 </div>
                 
                 <div class="success-card">
                     <div class="success-image success-2"></div>
-                    <h3 class="success-title">Marketing ROI Improved</h3>
-                    <p class="success-text">Our AI-powered marketing automation solutions helped a tech startup achieve a 45% ROI improvement by optimizing campaigns, targeting the right audience, and automating content distribution across multiple channels.</p>
+                    <h3 class="success-title">Automated Proposal Generation</h3>
+                    <p class="success-text">Built N8N workflow connecting CRM to AI proposal generator using GPT-4 and company data. Automatically creates customized proposals based on client requirements and sends via DocuSign. Tech startup reduced proposal time from 6 hours to 15 minutes, closed 45% more deals.</p>
                 </div>
                 
                 <div class="success-card">
                     <div class="success-image success-3"></div>
-                    <h3 class="success-title">Customer Satisfaction Enhanced</h3>
-                    <p class="success-text">By implementing intelligent CRM automation, we enabled a financial services firm to boost customer satisfaction by 20%, fostering stronger loyalty and retention through predictive support and personalized service.</p>
+                    <h3 class="success-title">Smart Customer Onboarding</h3>
+                    <p class="success-text">Deployed AI-powered onboarding system using N8N, Airtable, and GPT-4. Automatically segments new customers, creates personalized welcome sequences, and schedules follow-ups based on user behavior. Financial services firm saw 62% faster onboarding, 20% higher customer satisfaction.</p>
                 </div>
             </div>
         </div>
